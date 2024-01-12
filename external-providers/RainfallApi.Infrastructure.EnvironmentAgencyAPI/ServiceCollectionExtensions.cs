@@ -14,6 +14,8 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddEnvironmentAgency(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddScoped<IFloodMonitoringRepository, FloodMonitoringRepository>();
+        services.Configure<EnvironmentAgencyOptions>(configuration.GetSection("EnvironmentAgencyOptions"));
+
         services.AddEnvironmentAgencyEndpoint<IFloodMonitoringApiClient>();
         return services;
     }

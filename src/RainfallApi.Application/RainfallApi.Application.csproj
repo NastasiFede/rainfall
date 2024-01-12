@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mappers\" />
+    <ProjectReference Include="..\..\external-providers\RainfallApi.Infrastructure.EnvironmentAgencyAPI\RainfallApi.Infrastructure.EnvironmentAgency.csproj" />
   </ItemGroup>
 
 </Project>
