@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Application", "src\RainfallApi.Application\RainfallApi.Application.csproj", "{49618517-DC28-4343-AB86-57802E9CF0F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Domain", "src\RainfallApi.Domain\RainfallApi.Domain.csproj", "{A619DEE9-FF4B-4411-8214-487994396D69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Inrastructure", "src\RainfallApi.Inrastructure\RainfallApi.Inrastructure.csproj", "{AAFC54B8-8C63-42B3-8B88-D02D18681F09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Repository", "src\RainfallApi.Repository\RainfallApi.Repository.csproj", "{F87C655C-0DEC-4179-A8C8-532AC77EA81D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Host", "src\RainfallApi.Host\RainfallApi.Host.csproj", "{C2B40EE5-FB05-4C62-AD02-74D0D0D272FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49618517-DC28-4343-AB86-57802E9CF0F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49618517-DC28-4343-AB86-57802E9CF0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49618517-DC28-4343-AB86-57802E9CF0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49618517-DC28-4343-AB86-57802E9CF0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A619DEE9-FF4B-4411-8214-487994396D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A619DEE9-FF4B-4411-8214-487994396D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A619DEE9-FF4B-4411-8214-487994396D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A619DEE9-FF4B-4411-8214-487994396D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFC54B8-8C63-42B3-8B88-D02D18681F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFC54B8-8C63-42B3-8B88-D02D18681F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFC54B8-8C63-42B3-8B88-D02D18681F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFC54B8-8C63-42B3-8B88-D02D18681F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87C655C-0DEC-4179-A8C8-532AC77EA81D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87C655C-0DEC-4179-A8C8-532AC77EA81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87C655C-0DEC-4179-A8C8-532AC77EA81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87C655C-0DEC-4179-A8C8-532AC77EA81D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B40EE5-FB05-4C62-AD02-74D0D0D272FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B40EE5-FB05-4C62-AD02-74D0D0D272FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B40EE5-FB05-4C62-AD02-74D0D0D272FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B40EE5-FB05-4C62-AD02-74D0D0D272FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {729B52DA-1756-4511-A885-4B6B81B8B457}
+	EndGlobalSection
+EndGlobal

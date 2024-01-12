@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "RainfallApi.Host": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:3000",
+      "environmentVariables": {
+        "ASPNETNone1_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
