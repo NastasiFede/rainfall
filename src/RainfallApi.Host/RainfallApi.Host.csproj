@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -17,9 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\external-providers\RainfallApi.Infrastructure.EnvironmentAgencyAPI\RainfallApi.Infrastructure.EnvironmentAgency.csproj" />
     <ProjectReference Include="..\RainfallApi.Application\RainfallApi.Application.csproj" />
     <ProjectReference Include="..\RainfallApi.Domain\RainfallApi.Domain.csproj" />
-    <ProjectReference Include="..\RainfallApi.Inrastructure\RainfallApi.Inrastructure.csproj" />
+    <ProjectReference Include="..\RainfallApi.Inrastructure\RainfallApi.Infrastructure.csproj" />
     <ProjectReference Include="..\RainfallApi.Repository\RainfallApi.Repository.csproj" />
   </ItemGroup>
 

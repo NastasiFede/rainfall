@@ -1,4 +1,9 @@
 using Microsoft.OpenApi.Models;
+using RainfallApi.Application;
+using RainfallApi.Domain;
+using RainfallApi.Infrastructure;
+using RainfallApi.Infrastructure.EnvironmentAgency;
+using RainfallApi.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +23,7 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddDomainServices(builder.Configuration);
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddEnvironmentAgency(builder.Configuration);
 
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
