@@ -15,6 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Host", "src\Rai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Infrastructure.EnvironmentAgency", "external-providers\RainfallApi.Infrastructure.EnvironmentAgencyAPI\RainfallApi.Infrastructure.EnvironmentAgency.csproj", "{9ABDA53F-8294-4637-8402-CF570127E8F0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{57D90CA7-6BC8-43FB-B0DE-6BF5ED3D2C7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit-tests", "unit-tests", "{C6D0734F-641F-4E9A-AB68-78558BCDF9D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Application.Tests", "tests\unit-tests\RainfallApi.Application.Tests\RainfallApi.Application.Tests.csproj", "{D7A1EE09-03F7-45E4-9BF9-71D13C8F4B6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,9 +51,17 @@ Global
 		{9ABDA53F-8294-4637-8402-CF570127E8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ABDA53F-8294-4637-8402-CF570127E8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ABDA53F-8294-4637-8402-CF570127E8F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7A1EE09-03F7-45E4-9BF9-71D13C8F4B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A1EE09-03F7-45E4-9BF9-71D13C8F4B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A1EE09-03F7-45E4-9BF9-71D13C8F4B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A1EE09-03F7-45E4-9BF9-71D13C8F4B6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C6D0734F-641F-4E9A-AB68-78558BCDF9D8} = {57D90CA7-6BC8-43FB-B0DE-6BF5ED3D2C7C}
+		{D7A1EE09-03F7-45E4-9BF9-71D13C8F4B6F} = {C6D0734F-641F-4E9A-AB68-78558BCDF9D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {729B52DA-1756-4511-A885-4B6B81B8B457}
