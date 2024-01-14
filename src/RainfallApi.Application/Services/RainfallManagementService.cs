@@ -1,4 +1,5 @@
-﻿
+﻿using FluentValidation;
+using FluentValidation.Results;
 using RainfallApi.Application.Mappers;
 using RainfallApi.Application.Models;
 using RainfallApi.Infrastructure.EnvironmentAgency.Repositories;
@@ -19,6 +20,8 @@ public class RainfallManagementService : IRainfallManagementService
 
     public async Task<RainfallReadingResponse> Get(string stationId, int count)
     {
+        ValidateCount(count);
+
         var externalResponse = await _floodMonitoringRepository.GetReading(stationId, count);
 
         if (!externalResponse.Items.Any())
@@ -33,5 +36,13 @@ public class RainfallManagementService : IRainfallManagementService
         };
 
         return response;
+    }
+
+    private void ValidateCount(int count)
+    {
+        if (count is > 100 or < 1)
+        {
+            throw new ValidationException("Invalid value", new []{ new ValidationFailure(nameof(count), "The field must be between 1 and 100.") });
+        }
     }
 }

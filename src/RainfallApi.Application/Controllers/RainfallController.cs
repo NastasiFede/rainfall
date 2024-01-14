@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RainfallApi.Application.Models;
 using RainfallApi.Application.Services;
@@ -34,7 +33,7 @@ namespace RainfallApi.Application.Controllers
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status404NotFound)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetRainfall([FromRoute] string stationId, [FromQuery] [Range(1, 100)] int count = 10)
+        public async Task<IActionResult> GetRainfall([FromRoute] string stationId, [FromQuery] int count = 10)
         {
             var response = await _rainfallManagementService.Get(stationId, count);
             return Ok(response);

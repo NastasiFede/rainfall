@@ -5,6 +5,13 @@
 /// </summary>
 public class ErrorResponse
 {
+    /// <summary>
+    /// Error message
+    /// </summary>
     public string Message { get; set; }
-    public IReadOnlyCollection<ErrorResponse> Detail { get; set; }
+
+    /// <summary>
+    ///  Details of invalid request property
+    /// </summary>
+    public IReadOnlyCollection<ErrorDetail> Detail { get; set; }
 }
