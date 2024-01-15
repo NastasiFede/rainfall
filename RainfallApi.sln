@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Host", "src\RainfallApi.Host\RainfallApi.Host.csproj", "{C2B40EE5-FB05-4C62-AD02-74D0D0D272FD}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Application", "src\RainfallApi.Application\RainfallApi.Application.csproj", "{49618517-DC28-4343-AB86-57802E9CF0F8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Domain", "src\RainfallApi.Domain\RainfallApi.Domain.csproj", "{A619DEE9-FF4B-4411-8214-487994396D69}"
@@ -11,8 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Infrastructure"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Repository", "src\RainfallApi.Repository\RainfallApi.Repository.csproj", "{F87C655C-0DEC-4179-A8C8-532AC77EA81D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Host", "src\RainfallApi.Host\RainfallApi.Host.csproj", "{C2B40EE5-FB05-4C62-AD02-74D0D0D272FD}"
-EndProject
+
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RainfallApi.Infrastructure.EnvironmentAgency", "external-providers\RainfallApi.Infrastructure.EnvironmentAgencyAPI\RainfallApi.Infrastructure.EnvironmentAgency.csproj", "{9ABDA53F-8294-4637-8402-CF570127E8F0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{57D90CA7-6BC8-43FB-B0DE-6BF5ED3D2C7C}"
