@@ -23,7 +23,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         new()
         {
-            Url = "http://localhost:3000",
+            // Url = "http://localhost:3000",
             Description = "Rainfall Api"
         },
     };
